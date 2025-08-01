@@ -1,0 +1,131 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 10px 15px;
+    height: 100vh;
+  }
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* space between logo and calculator */
+  }
+.logo{
+    text-align: center;
+    margin: 0;
+}
+.logo img{
+    max-width: 400px;
+    height: auto;
+}
+.calculator{
+    background: white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.header{
+    background: #6bbed8;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+}
+.subject{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+.subject label{
+    width: 70px;
+    font-size: 0.9rem;
+    color: black;
+}
+.subject input{
+    width: 70px;
+    margin: 0 15px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+.subject button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+.subject button i {
+    color: #6bbed8;
+    font-size: 20px;
+  }
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    gap: 1rem;
+}
+.buttons button{
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    background: #6bbed8;
+    cursor: pointer;
+}
+
+.result{
+    text-align: center;
+    background: #6bbed8;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+}
+@media (max-width: 768px) {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo{
+        padding-top: 200px;
+    }
+    .logo img {
+      max-width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+      }
+    
+      .buttons button {
+        width: 100%;
+      }
+      .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+}

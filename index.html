@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" href="Img/GWA_Calculator_logo.png" type="png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <title>GWA Calculator</title>
+    
+</head>
+     <body>
+      <div class="wrapper">
+        <div class="logo">
+          <img src="Img/GWA Calculator.png" alt="GWA Calculator Logo">
+        </div>
+      <div class="calculator">
+        <div class="header">Calculate Now</div>
+        <div id="subjects"></div>
+
+        <div class="buttons">
+          <button onclick="addSubject()">+ Add Subject</button>
+          <button onclick="calculateGWA()">Calculate</button>
+        </div>
+        <div class="result" id="gwaResult">Your GWA:</div>
+      </div>
+        <script src="script.js"></script>
+    </body>
+</html>
